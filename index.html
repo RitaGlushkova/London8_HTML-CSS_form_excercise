@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search GitHub</title>
+  </head>
+  <body>
+    <form action="https://github.com/search" method="get" target="_blank">
+      <label for="Search">Search GitHub</label>
+      <input id="search" type="text" name="q" />
+      <button>Search</button>
+      <label for="sortby">Sort by</label>
+      <select id="sortby" name="s">
+        <option value="stars" selected>Stars</option>
+        <option value="forks">Forks</option>
+        <option value="updated">Updates</option>
+      </select>
+      <fieldset>
+        <legend>Order</legend>
+        <input id="desc" type="radio" name="o" value="desc" />
+        <label for="desc">Descending</label>
+
+        <input id="asc" type="radio" name="o" value="asc" />
+        <label for="asc">Ascending</label>
+      </fieldset>
+    </form>
+  </body>
+</html>
